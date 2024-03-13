@@ -1,0 +1,17 @@
+<div class="modal fade" id="skinModal" tabindex="-1" aria-labelledby="skinModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content py-3 px-3">
+      <h1 class="text-center">Seleccionar Avatar</h1>
+
+      <div class="avatar_list">
+        <div class="avatar" *ngFor="let avatar of avatars">
+          <div class="avatar_img">
+            <img src="{{ avatar.img }}" alt="Avatar" />
+          </div>
+        </div>
+      </div>
+
+      <button class="botonPrincipal">confirmar</button>
+    </div>
+  </div>
+</div>

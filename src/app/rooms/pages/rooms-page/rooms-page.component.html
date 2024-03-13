@@ -1,0 +1,45 @@
+<div class="title">
+  <img src="./assets/svg/back.svg" routerLink="../">
+  <h1>Rooms</h1>
+</div>
+<div class="contenido">
+  <div class="room_list">
+    <div class="room" *ngFor="let room of rooms" (click)="selectedRoom($event)">
+      <div class="room_content">
+        <div class="room_img">
+          <img src="{{ room.img }}" alt="Avatar" />
+        </div>
+        <div class="room_details">
+          <div class="room_name">
+            <h2>{{ room.name }} <span>#{{room.code}}</span></h2>
+
+          </div>
+          <div class="room_info">
+            <i class='bx bxs-user'>
+              <span>{{ room.users }}</span>
+            </i>
+
+            <i class='bx bxs-book-content'>
+              <span>{{ room.language }}</span>
+            </i>
+
+            <i class='bx bxs-trophy'>
+              <span>{{ room.trophies }}</span>
+            </i>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<div class="w-100 d-flex gap-2">
+  <button type="button" class="botonSecundario" routerLink="create">
+    <span>new room</span>
+  </button>
+  <button class="botonPrincipal">
+    <span>play</span>
+  </button>
+</div>

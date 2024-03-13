@@ -1,0 +1,142 @@
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title img {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.room_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  background-color: #9fbdc9 !important;
+  padding: .5em;
+  border: 1px solid #5d8899;
+  border-radius: 10px;
+
+  max-width: 100%;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.room {
+  flex: 1 0 200px;
+  margin: 5px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 0;
+  border: 7px solid #fff;
+
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+}
+
+.room:hover {
+  border-color:  rgba(0,121,255,.7);
+  background-color: #eefdff;
+  cursor: pointer;
+}
+
+.room_content {
+
+  margin-top: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+
+
+}
+
+.room .room_img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #012442;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #9fbdc9;
+}
+
+
+.room_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.room_details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+.room .room_name {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.room_name h2 {
+  color: #797979;
+  font-weight: 900;
+}
+
+.room_name span {
+  font-weight: 300 !important;
+}
+
+.room_name h2,
+.room_name span {
+  font-size: 1em !important;
+}
+
+.room_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.room_info i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em !important;
+  color: #0a5efb;
+}
+
+.room_info i span {
+  color: #797979;
+  font-weight: 500 !important;
+}
+
+.selected {
+  border: 7px solid #0a5efb !important;
+}
+

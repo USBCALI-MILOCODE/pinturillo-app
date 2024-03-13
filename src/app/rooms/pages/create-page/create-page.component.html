@@ -1,0 +1,59 @@
+<div class="title">
+  <img src="./assets/svg/back.svg" routerLink="../">
+  <h1>Set Up</h1>
+</div>
+<div class="contenido">
+  <div class="config">
+    <div class="settings">
+      <div class="global_settings">
+        <h2>1. settings</h2>
+        <div>
+          <i class='bx bx-user-circle'><span>players</span></i>
+            <select>
+              <option *ngFor="let player of playerOptions" [value]="player">{{player}}</option>
+            </select>
+        </div>
+
+        <div>
+          <i class='bx bx-trophy'><span>points</span></i>
+          <select>
+            <option *ngFor="let point of pointsOptions" [value]="point">{{point}}</option>
+          </select>
+        </div>
+
+        <div>
+          <i class='bx bx-show'><span>show</span></i>
+          <select></select>
+        </div>
+
+      </div>
+      <div class="leng">
+        <h2>2. Lenguage</h2>
+        <select>
+          <option *ngFor="let leng of lengOptions" [value]="leng">{{ leng }}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="theme">
+    <div class="theme_header">
+      <h2>3. Theme</h2>
+    </div>
+    <div class="theme_list scroll">
+      <div class="theme_item" *ngFor="let theme of themes">
+        <div class="theme_item_content">
+          <img src="{{ theme.img }}" alt="">
+          <h3>{{ theme.name }}</h3>
+          <p>official <i class='bx bxs-message-square-check'></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="w-100 d-flex gap-2">
+  <button type="button" class="botonPrincipal" routerLink="create">
+    <span>new room</span>
+  </button>
+</div>
