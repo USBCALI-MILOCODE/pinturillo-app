@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./rooms/rooms.module').then(m => m.RoomsModule)
   },
   {
+    path: 'room',
+    loadChildren: () => import('./room/room.module').then(m => m.RoomModule)
+  },
+  {
     path: '**',
     redirectTo: 'login'
   }

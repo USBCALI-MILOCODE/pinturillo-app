@@ -1,10 +1,13 @@
 <div class="title">
   <img src="./assets/svg/back.svg" routerLink="../">
   <h1>Rooms</h1>
+  <button data-bs-toggle="modal" data-bs-target="#joinRoomModal" class="botonSecundario">Enter code</button>
 </div>
+<join-room-page></join-room-page>
+
 <div class="contenido">
   <div class="room_list">
-    <div class="room" *ngFor="let room of rooms" (click)="selectedRoom($event)">
+    <div class="room" *ngFor="let room of rooms" (click)="selectedRoom($event)" routerLink="/room">
       <div class="room_content">
         <div class="room_img">
           <img src="{{ room.img }}" alt="Avatar" />
@@ -30,16 +33,16 @@
         </div>
 
       </div>
-
-
     </div>
   </div>
 </div>
-<div class="w-100 d-flex gap-2">
-  <button type="button" class="botonSecundario" routerLink="create">
-    <span>new room</span>
+<div class="w-100 d-flex gap-2 room_abajo">
+  <button type="button" class="botonSecundario botonPrincipal d-flex align-items-center gap-1 justify-content-center" routerLink="create">
+  <img src="./assets/svg/door.svg" alt="">
+  <span>new room</span>
   </button>
-  <button class="botonPrincipal">
+  <button class="botonPrincipal d-flex align-items-center gap-1 justify-content-center">
+    <img src="./assets/svg/control.svg" alt="">
     <span>play</span>
   </button>
 </div>
