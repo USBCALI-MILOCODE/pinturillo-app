@@ -4,12 +4,14 @@ import { RoomsLayoutComponent } from './layouts/rooms-layout/rooms-layout.compon
 import { RoomsRoutingModule } from './rooms-routing.module';
 import { RoomsPageComponent } from './pages/rooms-page/rooms-page.component';
 import { CreatePageComponent } from './pages/create-page/create-page.component';
+import { JoinRoomPageComponent } from './pages/join-room-page/join-room-page.component';
 
 @NgModule({
   declarations: [
     RoomsLayoutComponent,
     RoomsPageComponent,
-    CreatePageComponent
+    CreatePageComponent,
+    JoinRoomPageComponent
   ],
   imports: [
     CommonModule,

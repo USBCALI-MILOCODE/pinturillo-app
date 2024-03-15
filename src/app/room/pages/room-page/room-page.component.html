@@ -1,0 +1,36 @@
+<div class="contenedor">
+  <div class="room-container">
+    <div class="user-list">
+      <div class="user" *ngFor="let user of userList">
+        <div class="user-avatar">
+          <img src="{{user.img}}" alt="">
+        </div>
+        <div class="user-info">
+          <span class="nick">{{ user.nick }}</span>
+          <span class="points">{{user.points}} pts</span>
+        </div>
+      </div>
+    </div>
+    <div class="room-tools">
+      <div class="board">
+        <i class='bx bx-exit bx-rotate-180' routerLink="../"></i>
+        <div class="guess">
+          <span class="hint">Hint</span>
+          <span class="word">_______</span>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="msg">
+          <h5>answers</h5>
+          <div class="history">
+
+          </div>
+          <div class="formChat">
+            <i class='bx bxs-pencil' ></i>
+            <input type="text" placeholder="answer here..." >
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
