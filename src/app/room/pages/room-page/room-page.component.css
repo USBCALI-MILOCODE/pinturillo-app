@@ -1,11 +1,11 @@
 .contenedor {
     height: 100vh;
     width: 100vmax;
-
+  
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
 .room-container {
     /* border: 1px solid white; */

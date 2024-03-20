@@ -1,0 +1,17 @@
+<div class="contenedor">
+  <div class="centrar">
+    <div class="titulo">
+      <p>Admin</p>
+    </div>
+    <div class="cuadro-list">
+      <div class="cuadro" *ngFor="let option of options" [routerLink]="option.link">
+        <i class='{{option.icon}}'></i>
+        <h1>{{option.title}}</h1>
+      </div>
+    </div>
+    <div class="salir">
+      <button routerLink="../" class="botonPrincipal">Salir</button>
+    </div>
+  </div>
+
+</div>

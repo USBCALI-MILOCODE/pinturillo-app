@@ -1,3 +1,4 @@
+
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -94,4 +95,29 @@ form label {
   font-size: 18px;
   border: 2px solid #868d96;
   color: #797979;
+}
+
+
+.titulo {
+  background-image: url(".../../assets/img/bandera.webp");
+  background-size: cover;
+  width: 320px;
+  height: 62px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.titulo p {
+  font-size: 20px;
+  padding: 0 5px;
+  margin-top: 7px;
+  font-weight: 800;
+  color: #ffbf00;
+  text-align: center;
+  line-height: 2 !important;
+  text-shadow: 0 -1px 0 #fffa6d,#001b51 3px 0 0,#001b51 2.83487px .981584px 0,#001b51 2.35766px 1.85511px 0,#001b51 1.62091px 2.52441px 0,#001b51 .705713px 2.91581px 0,#001b51 -.287171px 2.98622px 0,#001b51 -1.24844px 2.72789px 0,#001b51 -2.07227px 2.16926px 0,#001b51 -2.66798px 1.37182px 0,#001b51 -2.96998px .42336px 0,#001b51 -2.94502px -.571704px 0,#001b51 -2.59586px -1.50383px 0,#001b51 -1.96093px -2.27041px 0,#001b51 -1.11013px -2.78704px 0,#001b51 -.137119px -2.99686px 0,#001b51 .850987px -2.87677px 0,#001b51 1.74541px -2.43999px 0,#001b51 2.44769px -1.73459px 0,#001b51 2.88051px -.838247px 0;
 }
